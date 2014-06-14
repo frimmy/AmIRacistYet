@@ -66,6 +66,9 @@
     "question":"Are you racist?",
     "answers" : [
       "Yes", "No"
+    ],
+    "images" : [
+      "yes.gif", "no.gif"
     ]
   },
   {
