@@ -18,6 +18,9 @@
     "question":"Which cartoon character would win in a fight?",
     "answers" : [
       "Mickey Mouse", "Superman", "Rainbow Brite", "Daffy Duck"
+    ],
+    "images" : [
+      "mickeymouse.gif", "superman.gif", "rainbowbrite.gif", "daffyduck.gif"
     ]
   },
  {
@@ -25,6 +28,9 @@
     "question":"Which of these words is most racist?",
     "answers" : [
       "Wizard of Oz", "Parking Lot", "Light Bulb", "Centennial"
+    ],
+    "images" : [
+      "wizardofoz.gif", "parkinglot.gif", "lightbulb.gif", "centennial.gif"
     ]
   },
   {
@@ -47,6 +53,9 @@
     "question":"Who do you most identify with?",
     "answers" : [
       "Dr Phil", "Oprah", "Goofy"
+    ],
+    "images" : [
+      "drphil.gif", "oprah.gif", "goofy.gif"
     ]
   },
   {
@@ -61,6 +70,9 @@
     "question":"Who do you most look up to?",
     "answers" : [
       "Donald Sterling", "Paula Deen", "Jeremiah Wright", "Justin Bieber"
+    ],
+    "images" : [
+      "donaldsterling.gif", "pauladeen.gif", "jeremiahwright.gif", "justinbieber.gif"
     ]
   }
   
