@@ -41,5 +41,36 @@
       "Pull the lever and murder the Latino woman",
       "Don't touch the lever and murder the Native Americans"
     ]
+  },
+  {
+    "id":7,
+    "question":"Who do you most identify with?",
+    "answers" : [
+      "Dr Phil", "Oprah", "Goofy"
+    ]
+  },
+  {
+    "id":8,
+    "question":"Are you racist?",
+    "answers" : [
+      "Yes", "No"
+    ]
+  },
+  {
+    "id":9,
+    "question":"Who do you most look up to?",
+    "answers" : [
+      "Donald Sterling", "Paula Deen", "Jeremiah Wright", "Justin Bieber"
+    ]
   }
+  
 ]
+
+
+
+
+
+
+
+
+
