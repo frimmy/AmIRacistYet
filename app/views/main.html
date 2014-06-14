@@ -1,26 +1,73 @@
 <div class="header">
-  <ul class="nav nav-pills pull-right">
-    <li class="active"><a ng-href="#">Am I Racist Yet?</a></li>
-  </ul>
-  <h3 class="text-muted">Am I Racist Yet?</h3>
+    <ul class="nav nav-pills pull-right">
+        <li class="active"><a ng-href="#">Am I Racist Yet?</a>
+        </li>
+    </ul>
+    <h3 class="text-muted">Am I Racist Yet?</h3>
 </div>
 <div class="jumbotron">
-  <h3>Our scientifically validated assessment will tell you the precise date and time when you will turn racist.</h3>
-  <p class="lead">
-    <img ng-src="images/paula_deen.jpg" alt="Paula Dean is "><br>
-  </p>
-  <h2>Based on our initial estimates, you will become racist on <strong>March 16th, 2027</strong></h2>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Find out the precise date</a></p>
+    <h3>Our scientifically validated assessment will tell you the precise date and time when you will turn racist.</h3>
+    <p class="lead">
+        <img ng-src="images/paula_deen.jpg" alt="Paula Dean is ">
+        <br>
+    </p>
+    <h2>Based on our initial estimates, you will become racist on
+        <strong>March 16th, 2027</strong>
+    </h2>
+    <p><a class="btn btn-lg btn-success" ng-href="#">Find out the precise date</a>
+    </p>
 
 </div>
-<div class = "row">
-  <div class = "col-md-4">
-    <h3>Scientists have proven than 74% of Americans will become racist by their 65th birthday.</h3>
-  </div>
-  <div class = "col-md-4">
-    <h3>Comedy Hack Day judges who vote for this app are 3x less likely to become racist in the next 4 hours.</h3>
-  </div>
-  <div class = "col-md-4">
-    <h3>By 2056, those damned kids will be ruining your perfectly mowed lawn.</h3>
-  </div>
+<div class="row">
+    <div class="col-md-4">
+        <h3>Scientists have proven than 74% of Americans will become racist by their 65th birthday.</h3>
+    </div>
+    <div class="col-md-4">
+        <h3>Comedy Hack Day judges who vote for this app are 3x less likely to become racist in the next 4 hours.</h3>
+    </div>
+    <div class="col-md-4">
+        <h3>By 2056, those damned kids will be ruining your perfectly mowed lawn.</h3>
+    </div>
+    <!-- Racism algo magic -->
+    <h1>racism counter</h1>
+
+    <h2>question
+        <span id="racism_counter"></span>of 6</h2>
+
+    <div id="question">
+        <h3>Is this a sample question?</h3>
+        <input type="radio" name="question" value="yes" onclick="goRacism();" />
+        <label for="yes">Yes</label>
+        <br/>
+        <input type="radio" name="question" value="no" onclick="goRacism();">
+        <label for="no">No</label>
+        </input>
+        <br/>
+        <input type="radio" name="question" value="maybe" onclick="goRacism();">
+        <label for="maybe">Maybe</label>
+        </input>
+        <br/>
+        <input type="radio" name="question" value="what" onclick="goRacism();">
+        <label for="what">What was the question</label>
+        </input>
+        <br/>
+    </div>
+
+    <br/>
+    <br/>
+
+
+    <h3>current status:
+        <span id="racism_status">Based on your current location (NYC), the current time (
+            <span id="current_time"></span>), and your skin tone (lovely), we've determined you're:
+            <span class="highlight">post racial</span>. Dare to play?</span>
+        <br/>
+        <br/>
+        <div id="racism_timer"></div>
+        <div id="racism_calendar" class="highlight"></div>
+    </h3>
+
+    <br/>
+
+    <a href="#" onclick="window.location.reload();">start over</a>
 </div>
