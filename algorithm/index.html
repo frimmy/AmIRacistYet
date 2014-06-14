@@ -1,0 +1,42 @@
+<html>
+<script src="racism_timer.js"></script>
+<style>
+.highlight{
+	color: red;
+}
+</style>
+<body>
+
+<h1>racism counter</h1>
+
+<h2>question <span id="racism_counter"></span> of 6</h2>
+
+<div id="question">
+<h3>Is this a sample question?</h3>
+ <input type="radio" name="question" value="yes" onclick="goRacism();"/> <label for="yes">Yes</label><br/>
+<input type="radio" name="question" value="no" onclick="goRacism();"> <label for="no">No</label></input><br/>
+<input type="radio" name="question" value="maybe" onclick="goRacism();"><label for="maybe"> Maybe</label></input><br/>
+<input type="radio" name="question" value="what" onclick="goRacism();"> <label for="what">What was the question</label>	</input><br/>
+</div>
+
+<br/><br/>
+
+
+<h3>current status:
+<span id="racism_status">Based on your current location (NYC), the current time (<span id="current_time"></span>), and your skin tone (lovely), we've determined you're: <span class="highlight">post racial</span>. Dare to play?</span>
+<br/><br/>
+<div id="racism_timer"></div>
+</h3>
+
+<br/>
+
+<a href="#" onclick="window.location.reload();">start over</a>
+
+</body>
+
+<script>
+setupRacismTimer("racism_counter", "racism_timer", "racism_status", "question");
+setupCurrentTime("current_time");
+</script>
+
+</html>
