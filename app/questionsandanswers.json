@@ -1,163 +1,45 @@
 [
   {
-    "QuestionID":1,
-    "QuestionText":"How many friends do you have of each of the following races?",
-    "ChoiceType":"Numerical",
-    "AnswerChoiceID":1,
-    "Text":"Black/African American"
+    "id":1,
+    "question":"How many friends do you have of each of the following races?",
+    "answers" : [
+      "0", "1-10", "11-1000", "prefer not to answer"
+    ]
   },
   {
-    "QuestionID":1,
-    "QuestionText":"How many friends do you have of each of the following races?",
-    "ChoiceType":"Numerical",
-    "AnswerChoiceID":2,
-    "Text":"Latino or Hispanic"
+    "id":2,
+    "question":"What is your age?",
+    "answers" : [
+      "0-18", "19-34", "35-60", "61-114"
+    ]
   },
   {
-    "QuestionID":1,
-    "QuestionText":"How many friends do you have of each of the following races?",
-    "ChoiceType":"Numerical",
-    "AnswerChoiceID":3,
-    "Text":"Asian or Pacific Islander"
+    "id":3,
+    "question":"Which cartoon character would win in a fight?",
+    "answers" : [
+      "Mickey Mouse", "Superman", "Rainbow Brite", "Daffy Duck"
+    ]
+  },
+ {
+    "id":4,
+    "question":"Which of these words is most racist?",
+    "answers" : [
+      "Wizard of Oz", "Parking Lot", "Light Bulb", "Centennial"
+    ]
   },
   {
-    "QuestionID":1,
-    "QuestionText":"How many friends do you have of each of the following races?",
-    "ChoiceType":"Numerical",
-    "AnswerChoiceID":4,
-    "Text":"Klingon"
+    "id":5,
+    "question":"Which backstreet boy are you? (Link to quiz if you need help)",
+    "answers" : [
+      "AJ", "Howie", "Nick", "Kevin", "Brian"
+    ]
   },
   {
-    "QuestionID":1,
-    "QuestionText":"How many friends do you have of each of the following races?",
-    "ChoiceType":"Numerical",
-    "AnswerChoiceID":5,
-    "Text":"White"
-  },
-  {
-    "QuestionID":1,
-    "QuestionText":"How many friends do you have of each of the following races?",
-    "ChoiceType":"Numerical",
-    "AnswerChoiceID":6,
-    "Text":"Morlock"
-  },
-  {
-    "QuestionID":2,
-    "QuestionText":"What is your age?",
-    "ChoiceType":"Numerical",
-    "AnswerChoiceID":7,
-    "Text":"Current Age"
-  },
-  {
-    "QuestionID":3,
-    "QuestionText":"Which cartoon character would win in a fight?",
-    "ChoiceType":"SingleChoice",
-    "AnswerChoiceID":8,
-    "Text":"Mickey Mouse"
-  },
-  {
-    "QuestionID":3,
-    "QuestionText":"Which cartoon character would win in a fight?",
-    "ChoiceType":"SingleChoice",
-    "AnswerChoiceID":9,
-    "Text":"Superman"
-  },
-  {
-    "QuestionID":3,
-    "QuestionText":"Which cartoon character would win in a fight?",
-    "ChoiceType":"SingleChoice",
-    "AnswerChoiceID":10,
-    "Text":"Rainbow Brite"
-  },
-  {
-    "QuestionID":3,
-    "QuestionText":"Which cartoon character would win in a fight?",
-    "ChoiceType":"SingleChoice",
-    "AnswerChoiceID":11,
-    "Text":"Daffy Duck"
-  },
-  {
-    "QuestionID":3,
-    "QuestionText":"Which cartoon character would win in a fight?",
-    "ChoiceType":"SingleChoice",
-    "AnswerChoiceID":12,
-    "Text":"Richie Rich"
-  },
-  {
-    "QuestionID":4,
-    "QuestionText":"Which of these words is most racist?",
-    "ChoiceType":"SingleChoice",
-    "AnswerChoiceID":13,
-    "Text":"Wizard of Oz"
-  },
-  {
-    "QuestionID":4,
-    "QuestionText":"Which of these words is most racist?",
-    "ChoiceType":"SingleChoice",
-    "AnswerChoiceID":14,
-    "Text":"Parking Lot"
-  },
-  {
-    "QuestionID":4,
-    "QuestionText":"Which of these words is most racist?",
-    "ChoiceType":"SingleChoice",
-    "AnswerChoiceID":15,
-    "Text":"Light Bulb"
-  },
-  {
-    "QuestionID":4,
-    "QuestionText":"Which of these words is most racist?",
-    "ChoiceType":"SingleChoice",
-    "AnswerChoiceID":16,
-    "Text":"Centennial"
-  },
-  {
-    "QuestionID":5,
-    "QuestionText":"Which backstreet boy are you? (Link to quiz if you need help)",
-    "ChoiceType":"SingleChoice",
-    "AnswerChoiceID":17,
-    "Text":"AJ"
-  },
-  {
-    "QuestionID":5,
-    "QuestionText":"Which backstreet boy are you? (Link to quiz if you need help)",
-    "ChoiceType":"SingleChoice",
-    "AnswerChoiceID":18,
-    "Text":"Howie"
-  },
-  {
-    "QuestionID":5,
-    "QuestionText":"Which backstreet boy are you? (Link to quiz if you need help)",
-    "ChoiceType":"SingleChoice",
-    "AnswerChoiceID":19,
-    "Text":"Nick"
-  },
-  {
-    "QuestionID":5,
-    "QuestionText":"Which backstreet boy are you? (Link to quiz if you need help)",
-    "ChoiceType":"SingleChoice",
-    "AnswerChoiceID":20,
-    "Text":"Kevin"
-  },
-  {
-    "QuestionID":5,
-    "QuestionText":"Which backstreet boy are you? (Link to quiz if you need help)",
-    "ChoiceType":"SingleChoice",
-    "AnswerChoiceID":21,
-    "Text":"Brian"
-  },
-  {
-    "QuestionID":6,
-    "QuestionText":"You see a trolley barrelling down a hill. There are 5 Native Americans tied to the tracks. If you pull a lever, the trolley will change tracks and run over a Latina woman instead. What do you do?",
-    "ChoiceType":"SingleChoice",
-    "AnswerChoiceID":22,
-    "Text":"Pull the lever and murder the Latino woman"
-  },
-  {
-    "QuestionID":6,
-    "QuestionText":"You see a trolley barrelling down a hill. There are 5 Native Americans tied to the tracks. If you pull a lever, the trolley will change tracks and run over a Latina woman instead. What do you do?",
-    "ChoiceType":"SingleChoice",
-    "AnswerChoiceID":23,
-    "Text":"Don't touch the lever and murder the Native Americans"
+    "id":6,
+    "question":"You see a trolley barrelling down a hill. There are 5 Native Americans tied to the tracks. If you pull a lever, the trolley will change tracks and run over a Latina woman instead. What do you do?",
+    "answers" : [
+      "Pull the lever and murder the Latino woman",
+      "Don't touch the lever and murder the Native Americans"
+    ]
   }
 ]
