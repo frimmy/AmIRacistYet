@@ -11,6 +11,9 @@
     "question":"What is your age?",
     "answers" : [
       "0-18", "19-34", "35-60", "61-114"
+    ],
+    "images" : [
+      "shirleytemple.gif", "aubreyplaza.gif", "billmurray.gif", "beaarthur.gif"
     ]
   },
   {
