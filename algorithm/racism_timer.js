@@ -1,5 +1,5 @@
 
-var racismCounterElt, racismTimerElt, racismStatusElt, questionElt;
+var racismCounterElt, racismTimerElt, racismCalendarElt, racismStatusElt, questionElt;
 var racismQuestionCount = 0;
 var secondsUntilRacist = 0;
 var secondsInAYear = 31540000;
@@ -9,9 +9,10 @@ var secondsInADay = 86400;
 var secondsInAHour = 3600;
 var secondsInAMinute = 60;
 
-function setupRacismTimer(racismCounterId, racismTimerId, racismStatusId, questionId){
+function setupRacismTimer(racismCounterId, racismTimerId, racismCalendarId, racismStatusId, questionId){
 	racismCounterElt = document.getElementById(racismCounterId);
 	racismTimerElt = document.getElementById(racismTimerId);
+	racismCalendarElt = document.getElementById(racismCalendarId);
 	racismStatusElt = document.getElementById(racismStatusId);
 	questionElt = document.getElementById(questionId);
 
@@ -67,6 +68,8 @@ function updateRacismCounter(){
 		// questionElt.style.display = 'none';
 		questionElt.innerHTML = "game over";
 	}
+
+	racismCalendarElt.innerHTML = currentRacismDate();
 }
 
 function goRacism(){
@@ -140,7 +143,11 @@ function setupCurrentTime(timeId){
 	var timeElt = document.getElementById(timeId);
 	var d = new Date();
 
-	var curr_hour = d.getHours();
+	timeElt.innerHTML = readableTimeForDate(d);
+}
+
+function readableTimeForDate(d){
+		var curr_hour = d.getHours();
 	var curr_min = d.getMinutes();
 	
 	if(curr_min < 10){
@@ -156,9 +163,51 @@ function setupCurrentTime(timeId){
 			curr_hour %= 12;
 		}
 	}
-
-	timeElt.innerHTML = curr_hour + ":" + curr_min + meridian;
+	return curr_hour + ":" + curr_min + meridian;
 }
 
+function currentRacismDate(){
+	var dt = new Date();
+	var dateInSeconds = dt.getTime();
+	dateInSeconds += secondsUntilRacist * 1000;
+	dt.setTime(dateInSeconds);
+
+	var currentDate = new Date();
+
+	var readableDay;
+
+	if(currentDate.getMonth() == dt.getMonth() 
+		&& currentDate.getFullYear() == dt.getFullYear() 
+		&& currentDate.getDate() == dt.getDate()){
+		readableDay = "today";
+	}else{
+		var month = readableMonth(dt.getMonth());
+		var day = dt.getDate();
+		var year = dt.getFullYear();
+
+		readableDay = month + ' ' + day + ', ' + year;
+	}
+
+	var time = readableTimeForDate(dt);
+	var retval = readableDay + ' at ' + time;
+	return retval;
+}
+
+function readableMonth(monthValue){
+	switch(monthValue){
+		case 0: return "January";
+		case 1: return "February";
+		case 2: return "March";
+		case 3: return "April";
+		case 4: return "May";
+		case 5: return "June";
+		case 6: return "July";
+		case 7: return "August";
+		case 8: return "September";
+		case 9: return "October";
+		case 10: return "November";
+		case 11: return "December";
+	}
+}
 
 
